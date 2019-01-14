@@ -1,6 +1,6 @@
-# vue-jd
+# jd-shop-vue
 
-> A Vue.js project
+> 之前都是前后端一起提交的，现将前后端单独分离出来，此文档为前端
 
 ## Build Setup
 
