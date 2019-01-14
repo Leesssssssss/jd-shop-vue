@@ -1,0 +1,88 @@
+.search {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 6vh;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e5e5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .searchItem {
+    flex: 0 0 auto;
+  }
+  .input {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    input {
+      background: #f7f7f7;
+      height: 4vh;
+      width: 80%;
+      font-size: 14px;
+      border-radius: 20px 20px 20px 20px;
+      padding-left: 35px;
+      outline: none;
+      margin-right: 25px;
+    }
+  }
+}
+
+.classify {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  margin-top: 6vh;
+}
+
+.main {
+  .mainTitle {
+    font-size: 14px;
+    font-weight: 700;
+  }
+  .mainContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 10px;
+    .mainContainerBox {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      img {
+        width: 18vw;
+        margin: 2vw;
+      }
+      .mainContainerText {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+// 修改input标签placeholder文字属性
+::-webkit-input-placeholder {
+  /* WebKit browsers */
+  font-size: 14px;
+  color: #757575;
+}
+
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  font-size: 14px;
+  color: #757575;
+}
+
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  font-size: 14px;
+  color: #757575;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  font-size: 14px;
+  color: #757575;
+}

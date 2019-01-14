@@ -1,0 +1,253 @@
+.header {
+  width: 100%;
+  height: 6vh;
+  background: linear-gradient(to bottom, #ffffff , #efefef); /* 标准的语法 */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .headerText {
+    color: black;
+    font-size: 1rem;
+  }
+}
+
+.address {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border-bottom: 1px solid #f3f3f3;
+  .addressInfo {
+    margin: 15px 10px 10px 10px;
+    flex: 1 1 auto;
+    .addressInfoTitle {
+      font-weight: 700;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+    .red {
+      font-size: 12px;
+      color: #e4393c;
+      border: 1px solid #f5b5b6;
+      padding: 0 3px;
+    }
+    .addressInfoText {
+      color: #666666;
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+}
+
+.noAddress {
+  background-color: #fff;
+  height: 10vh;
+  .noAddressBtn {
+    width: 30%;
+    height: 4vh;
+    margin: 3vh 35%;
+    text-align: center;
+    background-color: #fff;
+    color: #e4393c;
+    border: 1px dashed #e4393c;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+  }
+}
+
+.cart {
+  margin-top: 20px;
+  .shopName {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    img {
+      width: 1.2rem;
+      height: 0.9rem;
+      margin-right: 5px;
+    }
+    .shopNameTitle {
+      font-weight: 700;
+    }
+  }
+
+  .goodList {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    padding: 20px 10px;
+    border-top: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
+    img {
+      width: 80px;
+      height: 80px;
+      margin: 0 10px;
+      flex: 0 0 auto;
+    }
+    .goodInfo {
+      flex: 1 1 auto;
+      display: flex;
+      flex-direction: column;
+      .goodInfoTitle {
+        img {
+          width: 51px;
+          height: 14px;
+        }
+        .goodInfoText {
+          font-weight: 700;
+          font-size: 14px;
+        }
+      }
+      .goodInfoKouwei {
+        color: #999999;
+        width: 97%;
+        font-size: 11px;
+        margin-top: 5px;
+      }
+      .goodInfoPriceAndCount {
+        display: flex;
+        margin-top: 15px;
+        align-items: center;
+        justify-content: space-between;
+        .goodInfoPrice {
+          color: #e4393c;
+          font-size: 16px;
+        }
+        .goodCount {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .peiSong {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px 15px 10px;
+    background-color: #fff;
+    border-bottom: 1px solid #f2f2f2;
+    .peiSongItem1 {
+      font-size: 16px;
+      color: #333333;
+    }
+    .peiSongItem2 {
+      font-size: 12px;
+      color: #333333;
+    }
+  }
+
+  .tuiHuan {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 25px 15px 10px;
+    background-color: #fff;
+    border-bottom: 1px solid #f2f2f2;
+    .tuiHuanItem1 {
+      font-size: 16px;
+      color: #333333;
+    }
+    .tuiHuanItem2 {
+      font-size: 12px;
+      color: #ea3b3d;
+    }
+  }
+}
+
+.card {
+  margin-top: 20px;
+  background-color: #fff;
+  .cardItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5px 15px 10px;
+    border-bottom: 1px solid #f2f2f2;
+    .cardItemTitle {
+      font-size: 16px;
+      color: #333333;
+    }
+    .cardItemText1 {
+      font-size: 12px;
+      color: #ea3b3d;
+      display: flex;
+      align-items: center;
+    }
+    .cardItemText2 {
+      font-size: 12px;
+      color: #666666;
+      display: flex;
+      align-items: center;
+    }
+    .cardItemText3 {
+      font-size: 12px;
+      color: #999999;
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+.price {
+  background-color: #fff;
+  margin-top: 20px;
+  .priceItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10px 0px 10px;
+    .priceItemTitle {
+      font-size: 14px;
+      color: #333333;
+    }
+    .priceItemText {
+      font-size: 13px;
+      color: #ea3b3d;
+    }
+  }
+  .priceItem1 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 15px 10px 30px 10px;
+    .priceItemTitle {
+      font-size: 16px;
+      font-weight: 700;
+    }
+    .priceItemText {
+      font-size: 16px;
+      color: #ea3b3d;
+    }
+  }
+}
+
+.btn {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding-bottom: 100px;
+  .btn1 {
+    width: 96%;
+    margin: 0 2%;
+    height: 6vh;
+    background-color: #bbebe9;
+    color: #0f8783;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+  }
+  .btn2 {
+    width: 96%;
+    margin: 10px 2%;
+    height: 6vh;
+    background-color: #3884ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+  }
+}

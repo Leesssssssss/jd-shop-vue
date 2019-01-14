@@ -1,0 +1,158 @@
+.header {
+  width: 100%;
+  height: 6vh;
+  background-color: #ffffff;
+  border-bottom: 1px solid #f2f2f2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .headerText {
+    color: black;
+    font-size: 1rem;
+  }
+}
+
+.needPay {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #ffffff;
+  padding: 15px 10px 15px 0;
+  .needPayTitle {
+    color: #232326;
+  }
+  .needPayText {
+    color: #f23030;
+  }
+}
+
+.pay {
+  width: 100%;
+  box-shadow: 0px 15px 20px -1px #f7f7f7 inset;
+  background-color: #ffffff;
+  .jdPay {
+    padding: 20px 0 10px 10px;
+    .icon {
+      width: 1em;
+      height: 1em;
+      vertical-align: -0.15em;
+      fill: currentColor;
+      overflow: hidden;
+    }
+  }
+  .bankCard {
+    background-color: #ffffff;
+    margin: 0 10px;
+    box-shadow: 0 0 20px 5px #f7f7f7;
+    // box-sizing: border-box;
+    .ICBC {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .leftBox {
+        display: flex;
+        align-items: center;
+        img {
+          width: 23px;
+          height: 23px;
+          margin: 20px 15px;
+        }
+        .leftItem {
+          .name {
+            color: #2e2d2d;
+            font-size: 14px;
+            margin-bottom: 5px
+          }
+          .text {
+            color: #848484;
+            font-size: 12px;
+          }
+        }
+      }
+      .rightBox {
+        margin-right: 15px;
+        .checkBox {
+          width: 14px;
+          height: 14px;
+          border: 2px solid #b9b9b9;
+          border-radius: 50%;
+          flex: 0 0 auto;
+        }
+        .checkBoxR {
+          width: 14px;
+          height: 14px;
+          border: 2px solid #e93b3d;
+          border-radius: 50%;
+          flex: 0 0 auto;
+          background-color: #e93b3d;
+          background-image: url(../../../assets/choose.png);
+          background-repeat: no-repeat;
+          background-size: 14px 14px;
+        }
+      }
+    }
+
+    .other {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid #f5f5f5;
+      padding: 10px 15px 10px 10px;
+      .text {
+        color: #707070;
+        font-size: 12px;
+      }
+      img {
+        width: 1rem;
+        height: 1rem;
+      }
+    }
+
+    .baiTiao {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .leftBox {
+        display: flex;
+        align-items: center;
+        img {
+          width: 23px;
+          height: 23px;
+          margin: 20px 15px;
+        }
+        .leftItem {
+          .name {
+            color: #bababa;
+            font-size: 14px;
+            margin-bottom: 5px
+          }
+          .text {
+            color: #bcbcbc;
+            font-size: 12px;
+          }
+        }
+      }
+      .rightBox {
+        margin-right: 15px;
+        .checkBox {
+          width: 14px;
+          height: 14px;
+          border: 2px solid #b9b9b9;
+          border-radius: 50%;
+          flex: 0 0 auto;
+        }
+      }
+    }
+  }
+}
+
+.btn {
+  outline: none;
+  width: 100%;
+  height: 7vh;
+  border: none;
+  position: fixed;
+  bottom: 0;
+  color: #ffffff;
+  font-size: 15px;
+  background: linear-gradient(to right, #f02f0f , #f95c22); /* 标准的语法 */
+}

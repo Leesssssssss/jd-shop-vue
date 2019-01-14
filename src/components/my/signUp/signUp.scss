@@ -1,0 +1,78 @@
+.header {
+  width: 100%;
+  height: 6vh;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #bbb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  .headerText {
+    color: #616161;
+    font-size: 1.1rem;
+  }
+  .block {
+    width: 1.2rem;
+    margin-right: 15px;
+  }
+}
+
+.signUp {
+  width: 100%;
+  height: 100vh;
+  background-color: #f7f7f7;
+  box-sizing: border-box;
+  input {
+    width: 80%;
+    height: 6vh;
+    margin: 20px 5% 0 5%;
+    outline: none;
+    padding: 0 5%;
+  }
+}
+
+.btn {
+  .signUpBtn {
+    width: 90%;
+    height: 6vh;
+    margin: 40px 5% 0 5%;
+    background-color: #e93b3d;
+    border: none;
+    color: white;
+    font-size: 16px;
+    letter-spacing: 5px;
+    border-radius: 5px;
+    outline: none;
+  }
+  .loginBtn {
+    width: 90%;
+    height: 6vh;
+    margin: 20px 5% 0 5%;
+    background-color: white;
+    border: 1px solid #5c5c5c;
+    color: #5c5c5c;
+    font-size: 16px;
+    border-radius: 5px;
+    outline: none;
+  }
+}
+
+
+
+// 修改input标签placeholder文字属性
+::-webkit-input-placeholder { /* WebKit browsers */
+  font-size: 14px;
+  color: #cccccc;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  font-size: 14px;
+  color: #cccccc;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  font-size: 14px;
+  color: #cccccc;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+  font-size: 14px;
+  color: #cccccc;
+}

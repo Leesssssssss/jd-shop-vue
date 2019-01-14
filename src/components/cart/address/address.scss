@@ -1,0 +1,87 @@
+.header {
+  width: 100%;
+  height: 6vh;
+  background: linear-gradient(to bottom, #ffffff , #efefef); /* 标准的语法 */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .headerText {
+    color: black;
+    font-size: 1rem;
+  }
+}
+
+.address {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border-bottom: 1px solid #f3f3f3;
+  .chooseBox {
+    width: 30px;
+    flex: 0 0 auto;
+    .checkBox {
+      width: 18px;
+      height: 18px;
+      border: 1px solid #6e6e6e;
+      border-radius: 50%;
+      flex: 0 0 auto;
+      margin: 20px 10px;
+    }
+    .checkBoxR {
+      width: 18px;
+      height: 18px;
+      border: 1px solid #e93b3d;
+      border-radius: 50%;
+      flex: 0 0 auto;
+      margin: 20px 10px;
+      background-color: #e93b3d;
+      background-image: url(../../../assets/choose.png);
+      background-repeat: no-repeat;
+      background-size: 18px 18px;
+    }
+  }
+  .addressInfo {
+    margin: 15px 10px 10px 10px;
+    flex: 1 1 auto;
+    .addressInfoTitle {
+      font-weight: 700;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+    .red {
+      font-size: 12px;
+      color: #e4393c;
+      border: 1px solid #f5b5b6;
+      padding: 0 3px;
+    }
+    .addressInfoText {
+      color: #666666;
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+  img {
+    width: 1.3rem;
+    height: 1.5rem;
+    margin-right: 20px;
+    flex: 0 0 auto;
+  }
+}
+
+.box {
+  width: 100%;
+  height: 6vh;
+  background-color: #ffffff;
+}
+
+.addAddressBtn {
+  background-color: #e4393c;
+  width: 100%;
+  max-width: 640px;
+  height: 6vh;
+  border: none;
+  color: #ffffff;
+  font-size: 16px;
+  position: fixed;
+  bottom: 0;
+}

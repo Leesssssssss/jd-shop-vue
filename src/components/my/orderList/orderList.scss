@@ -1,0 +1,143 @@
+.header {
+  width: 100%;
+  height: 6vh;
+  background-color: #ffffff;
+  border-bottom: 1px solid #f2f2f2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .headerText {
+    color: black;
+    font-size: 1rem;
+  }
+}
+
+.search {
+  width: 100%;
+  height: 5vh;
+  margin: 8px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  input {
+    width: 85%;
+    background: #ffffff;
+    height: 4vh;
+    font-size: 14px;
+    border-radius: 20px 20px 20px 20px;
+    padding-left: 35px;
+    outline: none;
+    margin-right: 25px;
+  }
+}
+
+.el-menu-demo {
+  margin-top: 10px;
+}
+
+.orderList {
+  background-color: #ffffff;
+  margin-top: 10px;
+  .orderListItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #f2f2f2;
+    .orderNum {
+      .orderNumTitle {
+        color: #999999;
+        font-size: 14px;
+      }
+      .orderNumText {
+        color: #151515;
+        font-size: 13px;
+      }
+    }
+    .orderInfo {
+      line-height: 20px;
+      .orderInfoTitle {
+        color: #999999;
+        font-size: 14px;
+      }
+      .orderInfoText {
+        color: #151515;
+        font-size: 13px;
+      }
+      .orderInfoTextR {
+        color: #e93b3d;
+        font-size: 13px;
+      }
+    }
+    .btn {
+      color: #ffffff;
+      background-color: #e93b3d;
+      border: none;
+      outline: none;
+      border-radius: 4px;
+      width: 80px;
+      height: 30px;
+    }
+  }
+  .goods {
+    padding: 15px 10px;
+    .shopName {
+      display: flex;
+      align-items: center;
+    }
+    .goodsList {
+      display: flex;
+      margin-top: 10px;
+      img {
+        flex: 0 0 auto;
+        width: 100px;
+        height: 100px;
+      }
+      .goodsInfo {
+        margin-left: 10px;
+        .goodsName {
+          color: #333333;
+          font-size: 13px;
+          line-height: 20px;
+        }
+        .goodsCount {
+          color: #999999;
+          font-size: 12px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+}
+
+.bottom {
+  color: #999999;
+  font-size: 14px;
+  text-align: center;
+  padding: 20px 0 100px 0;
+}
+
+// 修改input标签placeholder文字属性
+::-webkit-input-placeholder {
+  /* WebKit browsers */
+  font-size: 14px;
+  color: #cccccc;
+}
+
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  font-size: 14px;
+  color: #cccccc;
+}
+
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  font-size: 14px;
+  color: #cccccc;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  font-size: 14px;
+  color: #cccccc;
+}
