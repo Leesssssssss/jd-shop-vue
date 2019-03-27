@@ -1,9 +1,13 @@
 <template>
-<!-- 注册页面 -->
+  <!-- 注册页面 -->
   <div>
     <!-- 顶部 -->
     <div class="header">
-      <i class="iconfont icon-back" style="color:#909295;font-size:25px;margin:0 10px;" @click="back"></i>
+      <i
+        class="iconfont icon-back"
+        style="color:#909295;font-size:25px;margin:0 10px;"
+        @click="back"
+      ></i>
       <span class="headerText">京东注册</span>
       <div class="block"></div>
     </div>
@@ -19,12 +23,12 @@
         <button class="loginBtn" @click="login">已有账号，去登录</button>
       </div>
     </div>
-
   </div>
 </template>
 
 <script>
-import axios from 'axios'
+import axios from "axios";
+import { MessageBox } from "mint-ui";
 
 export default {
   data() {
@@ -48,27 +52,32 @@ export default {
         this.password === "" ||
         this.passwordAgain === ""
       ) {
-        alert("请将注册信息填写完整！");
+        MessageBox("提示", "请将注册信息填写完整！");
       } else {
         if (this.userName.length < 4) {
-          alert("用户名不得少于4位！");
+          MessageBox("提示", "用户名不得少于4位！");
         } else {
           if (this.telNum.length !== 11) {
-            alert("请输入正确的手机号！");
+            MessageBox("提示", "请输入正确的手机号！");
           } else {
             if (this.password !== this.passwordAgain) {
-              alert("两次输入的密码不一致！");
+              MessageBox("提示", "两次输入的密码不一致！");
             } else {
-              axios.post('http://localhost:7001/signUp', 
-              { userName: this.userName, telNum: this.telNum, password: this.password }).then(result => {
-                var result = result.data;
-                if (result === '注册成功！') {
-                  alert(result);
-                  this.$router.push({ 'path': '/login' });
-                } else {
-                  alert(result);
-                }
-              })
+              axios
+                .post("http://localhost:7001/signUp", {
+                  userName: this.userName,
+                  telNum: this.telNum,
+                  password: this.password
+                })
+                .then(result => {
+                  var result = result.data;
+                  if (result === "注册成功！") {
+                    MessageBox("提示", result);
+                    this.$router.push({ path: "/login" });
+                  } else {
+                    MessageBox("提示", result);
+                  }
+                });
             }
           }
         }

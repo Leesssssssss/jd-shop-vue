@@ -9,19 +9,23 @@
   justify-content: space-between;
   align-items: center;
   background-color: rgba($color: #ffffff, $alpha: 0);
+
   .headerPic {
     flex: 0 1 40px;
     text-align: center;
+
     i {
       color: rgba($color: #ffffff, $alpha: 0.8);
       font-size: 25px;
     }
   }
+
   .input {
     flex: 1 1 auto;
     display: flex;
     justify-content: center;
     align-items: center;
+
     input {
       height: 25px;
       width: 80%;
@@ -46,19 +50,23 @@
   justify-content: space-between;
   align-items: center;
   background-color: rgba($color: #e43130, $alpha: 0.8);
+
   .headerPic {
     flex: 0 1 40px;
     text-align: center;
+
     i {
       color: #ffffff;
       font-size: 25px;
     }
   }
+
   .input {
     flex: 1 1 auto;
     display: flex;
     justify-content: center;
     align-items: center;
+
     input {
       height: 25px;
       width: 80%;
@@ -87,14 +95,17 @@
   height: 30%;
   background-color: white;
   border-radius: 10px;
+
   .smallListItem {
     width: 20%;
     height: 30%;
     text-align: center;
+
     img {
       width: 50%;
       margin: 10px 0;
     }
+
     .smallListItemText {
       font-size: 14px;
       margin-bottom: 10px;
@@ -106,14 +117,18 @@
 .choujiang {
   display: flex;
   width: 100%;
+
   .choujiangItem1 {
     width: 50%;
+
     img {
       width: 100%;
     }
   }
+
   .choujiangItem2 {
     width: 25%;
+
     img {
       width: 100%;
     }
@@ -128,49 +143,60 @@
   margin: 10px 0;
   padding: 10px;
   box-sizing: border-box;
+
   .miaoHeader {
     display: flex;
     justify-content: space-between;
+
     .miaoHeaderLeft {
       display: flex;
       align-items: center;
+
       .miaoHeaderLeftTitle {
         font-size: 1rem;
         color: #f02b2b;
         font-weight: 700;
         margin: .125rem .375rem 0;
       }
+
       .miaoHeaderLeftTime {
         font-size: 12px;
         color: #232326;
         font-weight: 700;
       }
     }
+
     .miaoHeaderRight {
       font-size: 10px;
       color: #f23030;
       margin-right: 20px;
+
       img {
         width: 11px;
         height: 11px;
       }
     }
   }
+
   .miaoSha {
     display: flex;
+
     .miaoShaItem {
       width: 19%;
       flex: 0 0 auto;
       text-align: center;
+
       img {
         width: 100%;
         margin: 10px;
       }
+
       .miaoPrice {
         font-weight: 700;
         color: #f23030;
         line-height: 16px;
       }
+
       .prePrice {
         font-size: 12px;
         color: #686868;
@@ -183,36 +209,44 @@
 
 .dongjia {
   width: 100%;
+
   .dongjiaTitle {
     margin: 0 auto;
     text-align: center;
+
     img {
       width: auto;
       height: 38px;
     }
   }
+
   .dongjiaTop {
     display: flex;
     text-align: center;
     background-color: white;
+
     .dongjiaTopItem {
       width: 50%;
       height: auto;
       border: 1px solid #f7f7f7;
       box-sizing: border-box;
+
       .dongjiaTopItemTitle {
         font-size: 18px;
         line-height: 25px;
         margin-top: 5px;
       }
+
       .dongjiaTopItemText {
         color: #648EFF;
         font-size: 14px;
       }
+
       .dongjiaTopItemPic {
         display: flex;
         justify-content: space-around;
         margin: 5px 0;
+
         img {
           width: 5rem;
           height: 5rem;
@@ -220,23 +254,28 @@
       }
     }
   }
+
   .dongjiaBottom {
     display: flex;
     text-align: center;
     background-color: white;
+
     .dongjiaBottomItem {
       width: 25%;
       border: 1px solid #f7f7f7;
       box-sizing: border-box;
+
       .dongjiaBottomItemTitle {
         font-size: 18px;
         line-height: 25px;
         margin-top: 5px;
       }
+
       .dongjiaBottomItemText {
         color: #648EFF;
         font-size: 14px;
       }
+
       img {
         width: 5rem;
         height: 5rem;
@@ -248,6 +287,7 @@
 .bottom {
   background-color: white;
   margin-top: 20px;
+
   .bottomOne {
     display: flex;
     width: 100%;
@@ -256,6 +296,7 @@
     box-sizing: border-box;
     border-bottom: 1px solid #e5e5e5;
     border-top: 1px solid #e5e5e5;
+
     .bottomOneItem {
       font-size: 3.73333vw;
       color: #96979a;
@@ -263,6 +304,7 @@
       width: 25%;
       border-right: 1px solid #96979a;
     }
+
     .bottomOneItemLast {
       font-size: 3.73333vw;
       color: #96979a;
@@ -270,6 +312,7 @@
       width: 25%;
     }
   }
+
   .bottomTwo {
     display: flex;
     width: 100%;
@@ -278,15 +321,18 @@
     justify-content: space-around;
     border-bottom: 1px solid #e5e5e5;
     padding: 1.06667vw 2vw;
+
     .bottomTwoItem {
       width: 33.3%;
       flex: 0 0 auto;
+
       img {
         width: 60%;
         margin: 0 20%;
       }
     }
   }
+
   .bottomText {
     color: #848689;
     font-size: 12px;
@@ -299,28 +345,35 @@
   background-color: #ffffff;
   padding-top: 20px;
   margin-top: 10px;
+
   .good {
     display: flex;
     flex-wrap: wrap;
+
     .goodItem {
       width: 50%;
       border: 1px solid #f4f4f4;
       box-sizing: border-box;
+
       img {
         width: 100%;
       }
+
       .goodTit {
         margin: 10px;
+
         .tit {
           font-size: 18px;
           line-height: 30px;
           letter-spacing: 1px;
         }
+
         .price {
           color: #f23030;
           font-weight: 700;
           margin-top: 5px;
         }
+
         .prePrice {
           font-size: 12px;
           color: #686868;
@@ -336,6 +389,8 @@
 .box {
   width: 100%;
   height: 8vh;
+  position: fixed;
+  bottom: 0;
 }
 
 .tab {
@@ -348,6 +403,7 @@
   height: 8%;
   box-shadow: 0 0 10px 0 hsla(0, 6%, 58%, .6);
   background-color: white;
+
   .tabItem {
     width: 20%;
     height: 72%;
@@ -355,10 +411,12 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
     .tabTit {
       color: #7c7e86;
       font-size: 12px;
     }
+
     .tabTitR {
       color: #f23030;
       font-size: 12px;

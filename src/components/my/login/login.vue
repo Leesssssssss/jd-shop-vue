@@ -1,9 +1,13 @@
 <template>
-<!-- 登录页面 -->
+  <!-- 登录页面 -->
   <div>
     <!-- 顶部 -->
     <div class="header">
-      <i class="iconfont icon-back" style="color:#909295;font-size:25px;margin:0 10px;" @click="back"></i>
+      <i
+        class="iconfont icon-back"
+        style="color:#909295;font-size:25px;margin:0 10px;"
+        @click="back"
+      ></i>
       <span class="headerText">京东登录</span>
       <div class="block"></div>
     </div>
@@ -28,17 +32,21 @@
         <div class="loginAccountItem">
           <div class="loginAccountItemText">密码</div>
           <input v-model="items.password" ref="password" type="password" placeholder="请输入密码">
-          <i class="iconfont icon-attentionforbidfill" style="color:#c7c7c7;font-size:22px;margin-right:5px;"></i>
+          <i
+            class="iconfont icon-attentionforbidfill"
+            style="color:#c7c7c7;font-size:22px;margin-right:5px;"
+          ></i>
         </div>
         <div class="loginAccountItem">
           <div class="loginAccountItemText">验证码</div>
           <input v-model="items.authCode" ref="authCode" type="text" placeholder="请输入图片验证码">
-          <img class="loginAccountItemYan" src="../../../assets/yanzhengma.jpg" alt="">
+          <img class="loginAccountItemYan" src="../../../assets/yanzhengma.jpg" alt>
         </div>
       </div>
 
       <div class="loginBtn">
-        <button :class="{ loginBtn1: is1, loginBtn1Active: is1Active }" @click="login">登录</button><br>
+        <button :class="{ loginBtn1: is1, loginBtn1Active: is1Active }" @click="login">登录</button>
+        <br>
         <button class="loginBtn2">一键登录</button>
       </div>
 
@@ -62,29 +70,33 @@
         <div class="otherLoginText">登录即代表同意您已同意京东隐私政策</div>
       </div>
     </div>
-
   </div>
 </template>
 
 <script>
-import axios from 'axios'
+import axios from "axios";
+import { MessageBox } from "mint-ui";
 
 export default {
   data() {
     return {
       items: {
-        account: '',
-        password: '',
-        authCode: '',
+        account: "",
+        password: "",
+        authCode: ""
       },
       is1: true,
       is1Active: false
-    }
+    };
   },
   watch: {
     items: {
       handler: function(val, oldval) {
-        if (this.$refs.account.value !== '' && this.$refs.password.value !== '' && this.$refs.authCode.value !== '') {
+        if (
+          this.$refs.account.value !== "" &&
+          this.$refs.password.value !== "" &&
+          this.$refs.authCode.value !== ""
+        ) {
           this.is1 = false;
           this.is1Active = true;
         } else {
@@ -93,7 +105,7 @@ export default {
         }
       },
       deep: true
-    },
+    }
   },
   methods: {
     back() {
@@ -101,38 +113,40 @@ export default {
     },
     // 去注册
     toSignUp() {
-      this.$router.push({ 'path': '/signUp' });
+      this.$router.push({ path: "/signUp" });
     },
     // 登录
     login() {
       if (this.is1Active === false) {
-        alert('请输入完整信息！');
+        MessageBox("提示", "请输入完整信息！");
       } else {
-        if (this.items.authCode != '323g') {
-          alert('验证码错误！');
+        if (this.items.authCode != "323g") {
+          MessageBox("提示", "验证码错误！");
         } else {
-          axios.post('http://localhost:7001/login',
-          { account: this.items.account, password: this.items.password }).then(result => {
-            var res = result.data;
-            console.log(res);
-            if (res === '账号或密码错误！') {
-              alert(res);
-            } else {
-              alert(res.message);
-              localStorage.login = 'login';
-              localStorage.userName = res.data.userName;
-              this.$router.push({ 'path': '/' });
-            }
-          });
+          axios
+            .post("http://localhost:7001/login", {
+              account: this.items.account,
+              password: this.items.password
+            })
+            .then(result => {
+              var res = result.data;
+              console.log(res);
+              if (res === "账号或密码错误！") {
+                MessageBox("提示", res);
+              } else {
+                MessageBox("提示", res.message);
+                localStorage.login = "login";
+                localStorage.userName = res.data.userName;
+                this.$router.push({ path: "/" });
+              }
+            });
         }
       }
     }
-
   }
-}
+};
 </script>
 
 <style scoped lang="scss">
 @import "./login.scss";
-
 </style>

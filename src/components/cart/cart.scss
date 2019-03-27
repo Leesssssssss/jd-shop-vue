@@ -6,6 +6,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   .headerText {
     color: black;
     font-size: 1.1rem;
@@ -18,15 +19,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
   img {
     width: 5.5rem;
     height: 5.5rem;
     margin-top: 20px;
   }
+
   .unLoginText {
     margin-top: 15px;
     color: #767676;
   }
+
   .unLoginBtn {
     margin-top: 15px;
     width: 3.8rem;
@@ -45,6 +49,7 @@
     display: flex;
     align-items: center;
     padding: 10px;
+
     .checkBox {
       width: 18px;
       height: 18px;
@@ -52,6 +57,7 @@
       border-radius: 50%;
       flex: 0 0 auto;
     }
+
     .checkBoxR {
       width: 18px;
       height: 18px;
@@ -63,11 +69,13 @@
       background-repeat: no-repeat;
       background-size: 18px 18px;
     }
+
     img {
       width: 1.2rem;
       height: 0.9rem;
       margin: 0 5px 0 10px;
     }
+
     .shopNameTitle {
       font-weight: 700;
     }
@@ -79,6 +87,7 @@
     align-items: center;
     padding: 10px;
     border-top: 1px solid #f2f2f2;
+
     .checkBox {
       width: 18px;
       height: 18px;
@@ -86,6 +95,7 @@
       border-radius: 50%;
       flex: 0 0 auto;
     }
+
     .checkBoxR {
       width: 18px;
       height: 18px;
@@ -97,26 +107,31 @@
       background-repeat: no-repeat;
       background-size: 18px 18px;
     }
+
     img {
       width: 80px;
       height: 80px;
       margin: 0 10px;
       flex: 0 0 auto;
     }
+
     .goodInfo {
       flex: 1 1 auto;
       display: flex;
       flex-direction: column;
+
       .goodInfoTitle {
         img {
           width: 51px;
           height: 14px;
         }
+
         .goodInfoText {
           color: #333333;
           font-size: 14px;
         }
       }
+
       .goodInfoKouwei {
         color: #666666;
         width: 97%;
@@ -126,15 +141,18 @@
         border-radius: 2px;
         margin-top: 10px;
       }
+
       .goodInfoPriceAndCount {
         display: flex;
         margin-top: 10px;
         align-items: center;
         justify-content: space-between;
+
         .goodInfoPrice {
           color: #e4393c;
           font-size: 14px;
         }
+
         .chooseCountBox {
           border: 1px solid #d9d9d9;
           height: 26px;
@@ -142,20 +160,24 @@
           border-radius: 2px;
           display: flex;
           align-items: center;
+
           .keJian {
             margin: 2px 5px;
             color: #666666;
             font-size: 20px;
           }
+
           .buKeJian {
             margin: 2px 5px;
             color: #cccccc;
             font-size: 20px;
           }
+
           .chooseCountBoxInput {
             height: 26px;
             border-left: 1px solid #d9d9d9;
             border-right: 1px solid #d9d9d9;
+
             input {
               outline: none;
               width: 50px;
@@ -166,6 +188,7 @@
           }
         }
       }
+
       .goodInfoDelete {
         color: #999999;
         font-size: 12px;
@@ -181,6 +204,8 @@
   width: 100%;
   height: 7vh;
   background-color: #ffffff;
+  position: fixed;
+  bottom: 0;
 }
 
 .tab {
@@ -193,11 +218,13 @@
   position: fixed;
   bottom: 0;
   border-top: 1px solid #eeeeee;
+
   .tabLeft {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-left: 10px;
+
     .checkBox {
       width: 18px;
       height: 18px;
@@ -206,6 +233,7 @@
       flex: 0 0 auto;
       margin-bottom: 8px;
     }
+
     .checkBoxR {
       width: 18px;
       height: 18px;
@@ -218,34 +246,42 @@
       background-repeat: no-repeat;
       background-size: 18px 18px;
     }
+
     .tabLeftText {
       color: #999999;
       font-size: 12px;
     }
   }
+
   .tabRight {
     display: flex;
     align-items: center;
+
     .price {
       display: flex;
       flex-direction: column;
       align-items: flex-end;
       margin-right: 10px;
+
       .priceTop {
         margin-bottom: 5px;
+
         .priceTopB {
           font-weight: 700;
         }
+
         .priceTopR {
           color: #e4393c;
           font-weight: 700;
         }
       }
+
       .priceBottom {
         color: #999999;
         font-size: 12px;
       }
     }
+
     .toBuy {
       width: 110px;
       height: 7vh;
@@ -256,6 +292,7 @@
       font-size: 16px;
       outline: none;
     }
+
     .toBuyR {
       width: 110px;
       height: 7vh;
