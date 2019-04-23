@@ -39,7 +39,8 @@ import axios from "axios";
 export default {
   data() {
     return {
-      order: {}
+      order: {},
+      time: ''
     };
   },
   created() {
@@ -57,7 +58,7 @@ export default {
   },
   methods: {
     orderDetail() {
-      this.$router.push({ path: "/orderDetail" });
+      this.$router.push({ name: "OrderDetail", params: { order: this.order } });
     },
     goBack() {
       this.$router.push({ path: "/" });

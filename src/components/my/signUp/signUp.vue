@@ -63,13 +63,11 @@ export default {
             if (this.password !== this.passwordAgain) {
               MessageBox("提示", "两次输入的密码不一致！");
             } else {
-              axios
-                .post("http://localhost:7001/signUp", {
+              axios.post("http://localhost:7001/signUp", {
                   userName: this.userName,
                   telNum: this.telNum,
                   password: this.password
-                })
-                .then(result => {
+                }).then(result => {
                   var result = result.data;
                   if (result === "注册成功！") {
                     MessageBox("提示", result);

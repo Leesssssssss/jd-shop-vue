@@ -56,7 +56,11 @@
       <div class="chooseCount">
         <span class="chooseCountTitle">数量</span>
         <div class="chooseCountBox">
-          <i class="iconfont icon-jianhao" v-bind:class="{ keJian: isKeJian, buKeJian: !isKeJian }" @click="toMinus"></i>
+          <i
+            class="iconfont icon-jianhao"
+            v-bind:class="{ keJian: isKeJian, buKeJian: !isKeJian }"
+            @click="toMinus"
+          ></i>
           <div class="chooseCountBoxInput">
             <input type="text" v-model="count" value="1">
           </div>
@@ -154,6 +158,7 @@ export default {
     toCart() {
       this.$router.push({ path: "/cart" });
     },
+    // 加入购物车
     addCart() {
       if (localStorage.login !== "login") {
         MessageBox("提示", "请先登录！");
