@@ -68,7 +68,7 @@ npm run dev
 
 ### 收货地址
 
-<img src="https://github.com/Leesssssssss/jd-shop-vue/blob/master/Screenshots/14.png" width="300"/>  <img src="https://github.com/Leesssssssss/jd-shop-vue/blob/master/Screenshots/13.png" width="300"/>
+<img src="https://github.com/Leesssssssss/jd-shop-vue/blob/master/Screenshots/13.png" width="300"/>  <img src="https://github.com/Leesssssssss/jd-shop-vue/blob/master/Screenshots/14.png" width="300"/>
 
 ### 确认订单
 
