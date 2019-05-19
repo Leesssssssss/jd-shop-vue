@@ -39,7 +39,7 @@ export default {
           Toast("请输入正确的手机号码！");
         } else {
           axios
-            .post("http://localhost:7001/changeTelNum", {
+            .post("http://jd.hhp.im/changeTelNum", {
               userName: localStorage.userName,
               telNum: this.telNum
             })

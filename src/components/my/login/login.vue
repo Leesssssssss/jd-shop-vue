@@ -124,7 +124,7 @@ export default {
           MessageBox("提示", "验证码错误！");
         } else {
           axios
-            .post("http://localhost:7001/login", {
+            .post("http://jd.hhp.im/login", {
               account: this.items.account,
               password: this.items.password
             })

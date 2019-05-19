@@ -89,7 +89,7 @@ export default {
     // 获取用户名以及手机号码
     this.name = localStorage.userName;
     axios
-      .get("http://localhost:7001/getInfo", {
+      .get("http://jd.hhp.im/getInfo", {
         params: { userName: localStorage.userName }
       })
       .then(res => {

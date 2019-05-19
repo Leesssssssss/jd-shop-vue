@@ -64,7 +64,7 @@ export default {
     if (this._id !== undefined) {
       this.change = true;
       axios
-        .post("http://localhost:7001/getAddress", {
+        .post("http://jd.hhp.im/getAddress", {
           userName: localStorage.userName,
           _id: this._id
         })
@@ -115,7 +115,7 @@ export default {
                   Toast("请填写正确的手机号码");
                 } else {
                   axios
-                    .post("http://localhost:7001/addAddress", {
+                    .post("http://jd.hhp.im/addAddress", {
                       userName: localStorage.userName,
                       name: this.name,
                       telNum: this.telNum,
@@ -135,7 +135,7 @@ export default {
         // 点击修改地址按钮进入该页面则修改地址
       } else {
         axios
-          .post("http://localhost:7001/updateAddress", {
+          .post("http://jd.hhp.im/updateAddress", {
             userName: localStorage.userName,
             _id: this._id,
             name: this.name,

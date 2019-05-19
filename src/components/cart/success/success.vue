@@ -48,7 +48,7 @@ export default {
     this.time = this.order.orderNum;
     console.log(this.order);
     axios
-      .post("http://localhost:7001/addOrder", {
+      .post("http://jd.hhp.im/addOrder", {
         userName: localStorage.userName,
         order: this.order
       })

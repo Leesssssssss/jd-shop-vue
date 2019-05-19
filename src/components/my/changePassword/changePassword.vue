@@ -36,7 +36,7 @@ export default {
         Toast("新密码不能为空！");
       } else {
         axios
-          .post("http://localhost:7001/changePassword", {
+          .post("http://jd.hhp.im/changePassword", {
             userName: localStorage.userName,
             password: this.password
           })

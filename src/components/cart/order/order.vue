@@ -150,7 +150,7 @@ export default {
   },
   created() {
     axios
-      .get("http://localhost:7001/getInfo", {
+      .get("http://jd.hhp.im/getInfo", {
         params: {
           userName: localStorage.userName
         }
